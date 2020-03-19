@@ -32,7 +32,7 @@ namespace vso.io.Controllers
             });
 
             Response.StatusCode = 302;
-            Response.RedirectLocation = String.Format("https://{0}.visualstudio.com/_workitems/edit/{1}", subdomain, number);
+            Response.RedirectLocation = String.Format("https://dev.azure.com/{0}/_workitems/edit/{1}", subdomain, number);
 
             return new ContentResult();
         }
